@@ -1,0 +1,201 @@
+<levels>
+
+	<!-- Mercury -->
+	<level name="Mercury" background="levels/0mercury.png" ordinal="0">
+		<zooms>
+			<zoom x="224" y="22" />
+			<zoom x="0" y="202" />
+			<zoom x="414" y="333" />
+		</zooms>
+		
+		<landingpads>
+			<landingpad multiplier="2" x="269" y="113" width="60" />
+			<landingpad multiplier="5" x="56" y="257" width="37" />
+			<landingpad multiplier="10" x="500" y="427" width="50" />
+		</landingpads>
+		
+		<labels>
+			<label type="brand" x="269" y="227" />
+			<label type="2x" x="289" y="119" />
+			<label type="5x" x="67" y="261" />
+			<label type="10x" x="513" y="432" />
+		</labels>
+	</level>
+	
+	<!-- Venus -->
+	<level name="Venus" background="levels/1venus.png" ordinal="1">
+		<zooms>
+			<zoom x="200" y="19" />
+			<zoom x="0" y="325" />
+			<zoom x="276" y="311" />
+		</zooms>
+		
+		<landingpads>
+			<landingpad multiplier="2" x="229" y="117" width="99" />
+			<landingpad multiplier="5" x="42" y="423" width="55" />
+			<landingpad multiplier="10" x="291" y="372" width="57" />
+		</landingpads>
+		
+		<labels>
+			<label type="brand" x="242" y="218" />
+			<label type="2x" x="267" y="123" />
+			<label type="5x" x="62" y="428" />
+			<label type="10x" x="305" y="378" />
+		</labels>
+	</level>
+	
+	<!-- Earth -->
+	<level name="Earth" background="levels/2earth.png" ordinal="2">
+		<zooms>
+			<zoom x="170" y="56" />
+			<zoom x="126" y="346" />
+			<zoom x="472" y="217" />
+		</zooms>
+		
+		<landingpads>
+			<landingpad multiplier="2" x="196" y="142" width="103" />
+			<landingpad multiplier="5" x="156" y="447" width="89" />
+			<landingpad multiplier="10" x="503" y="311" width="55" />
+		</landingpads>
+		
+		<labels>
+			<label type="brand" x="399" y="357" />
+			<label type="2x" x="239" y="155" />
+			<label type="5x" x="191" y="451" />
+			<label type="10x" x="518" y="317" />
+		</labels>
+	</level>
+	
+	<!-- Mars -->
+	<level name="Mars" background="levels/3mars.png" ordinal="3">
+		<zooms>
+			<zoom x="210" y="20" />
+			<zoom x="205" y="133" />
+			<zoom x="326" y="346" />
+		</zooms>
+		
+		<landingpads>
+			<landingpad multiplier="2" x="265" y="111" width="49" />
+			<landingpad multiplier="5" x="223" y="189" width="49" />
+			<landingpad multiplier="10" x="400" y="428" width="39" />
+		</landingpads>
+		
+		<labels>
+			<label type="brand" x="262" y="331" />
+			<label type="2x" x="280" y="119" />
+			<label type="5x" x="238" y="196" />
+			<label type="10x" x="407" y="435" />
+		</labels>
+	</level>
+	
+	<!-- Jupiter -->
+	<level name="Jupiter" background="levels/4jupiter.png" ordinal="4">
+		<zooms>
+			<zoom x="193" y="6" />
+			<zoom x="17" y="275" />
+			<zoom x="399" y="341" />
+		</zooms>
+		
+		<landingpads>
+			<landingpad multiplier="2" x="241" y="88" width="62" />
+			<landingpad multiplier="5" x="57" y="367" width="45" />
+			<landingpad multiplier="10" x="421" y="434" width="53" />
+		</landingpads>
+		
+		<labels>
+			<label type="brand" x="214" y="230" />
+			<label type="2x" x="264" y="95" />
+			<label type="5x" x="71" y="373" />
+			<label type="10x" x="435" y="439" />
+		</labels>
+	</level>
+	
+	<!-- Saturn -->
+	<level name="Saturn" background="levels/5saturn.png" ordinal="5">
+		<zooms>
+			<zoom x="228" y="76" />
+			<zoom x="1" y="264" />
+			<zoom x="471" y="220" />
+		</zooms>
+		
+		<landingpads>
+			<landingpad multiplier="2" x="273" y="162" width="61" />
+			<landingpad multiplier="5" x="15" y="331" width="48" />
+			<landingpad multiplier="10" x="497" y="287" width="40" />
+		</landingpads>
+		
+		<labels>
+			<label type="brand" x="232" y="430" />
+			<label type="2x" x="296" y="169" />
+			<label type="5x" x="29" y="337" />
+			<label type="10x" x="504" y="292" />
+		</labels>
+	</level>
+	
+	<!-- Uranus -->
+	<level name="Uranus" background="levels/6uranus.png" ordinal="6">
+		<zooms>
+			<zoom x="177" y="0" />
+			<zoom x="181" y="173" />
+			<zoom x="427" y="179" />
+		</zooms>
+		
+		<landingpads>
+			<landingpad multiplier="2" x="279" y="86" width="35" />
+			<landingpad multiplier="5" x="255" y="229" width="40" />
+			<landingpad multiplier="10" x="526" y="278" width="38" />
+		</landingpads>
+		
+		<labels>
+			<label type="brand" x="258" y="360" />
+			<label type="2x" x="288" y="92" />
+			<label type="5x" x="266" y="236" />
+			<label type="10x" x="530" y="281" />
+		</labels>
+	</level>
+	
+	<!-- Neptune -->
+	<level name="Neptune" background="levels/7neptune.png" ordinal="7">
+		<zooms>
+			<zoom x="226" y="27" />
+			<zoom x="256" y="265" />
+			<zoom x="413" y="317" />
+		</zooms>
+		
+		<landingpads>
+			<landingpad multiplier="2" x="283" y="123" width="36" />
+			<landingpad multiplier="5" x="277" y="324" width="44" />
+			<landingpad multiplier="10" x="419" y="401" width="54" />
+		</landingpads>
+		
+		<labels>
+			<label type="brand" x="223" y="223" />
+			<label type="2x" x="293" y="128" />
+			<label type="5x" x="289" y="329" />
+			<label type="10x" x="434" y="406" />
+		</labels>
+	</level>
+	
+	<!-- Pluto -->
+	<level name="Pluto" background="levels/8pluto.png" ordinal="8">
+		<zooms>
+			<zoom x="215" y="0" />
+			<zoom x="10" y="345" />
+			<zoom x="471" y="342" />
+		</zooms>
+		
+		<landingpads>
+			<landingpad multiplier="2" x="262" y="61" width="43" />
+			<landingpad multiplier="5" x="28" y="401" width="49" />
+			<landingpad multiplier="10" x="573" y="395" width="38" />
+		</landingpads>
+		
+		<labels>
+			<label type="brand" x="12" y="277" />
+			<label type="2x" x="275" y="65" />
+			<label type="5x" x="44" y="406" />
+			<label type="10x" x="580" y="400" />
+		</labels>
+	</level>
+	
+</levels>
