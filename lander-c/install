@@ -1,0 +1,13 @@
+To install this software, the provided makefile should work.
+You will need to have the Allegro 4, DUMB, and ALDUMB libraries installed.
+
+You will have to hand edit the makefile to switch between debugging
+and release builds.  You can check it yourself, just uncomment the 
+appropriate DEBUG and LDFLAGS variables at the top of the file.
+
+I used GCC v4.1.1 to compile this.
+
+
+If you try compiling this with MSVC, I cannot help you, as I have
+stopped using that compiler now that I have a fast enough computer
+where I can do all my development in Linux.

@@ -1,0 +1,4 @@
+todo
+
+-a bug somewhere makes the rocket sound get muted until you die
+- resume game scrolls gamefield in just like new game

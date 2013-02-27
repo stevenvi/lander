@@ -1,0 +1,61 @@
+
+
+
+CPP = g++
+DEBUG = -D_DEBUG -DDEBUGMODE=1 -g3 -W -Wall
+#DEBUG = -O2
+CPPFLAGS = -I./src/ $(DEBUG)
+LDFLAGS = `allegro-config --libs debug` -laldmd -ldumbd
+#LDFLAGS = `allegro-config --libs` -laldmb -ldumb
+
+LANDER_FILES = Configuration CreditItem Credits Fireball \
+FireballSet KeyHandler Level Logfile Menu Particle \
+ParticleSource TheGame TheLander Timer TransitionStar \
+TransitionStarSet collide main icon Music Sound gpl
+
+CORESET_FILES = coreset
+
+CORECONV_FILES = coreconv
+
+TEST_FILES = test
+
+
+LANDER_SRC = $(addprefix src/, $(addsuffix .cpp, $(LANDER_FILES)))
+LANDER_OBJ = $(addprefix obj/, $(addsuffix .o, $(LANDER_FILES)))
+CORESET_SRC = $(addprefix tools/, $(addsuffix .cpp, $(CORESET_FILES)))
+CORESET_OBJ = $(addprefix obj/, $(addsuffix .o, $(CORESET_FILES)))
+CORECONV_OBJ = $(addprefix tools/, $(addsuffix .cpp, $(CORECONV_FILES)))
+CORECONV_OBJ = $(addprefix obj/, $(addsuffix .o, $(CORECONV_FILES)))
+
+TEST_SRC = $(addprefix src/, $(addsuffix .cpp, $(TEST_FILES)))
+TEST_OBJ = $(addprefix obj/, $(addsuffix .o, $(TEST_FILES)))
+
+
+all: lander coreset coreconv
+
+
+# Rules for compiling source files
+obj/%.o: src/%.cpp
+	$(CPP) $(CPPFLAGS) -c $< -o $@
+	
+obj/%.o: tools/%.cpp
+	$(CPP) $(CPPFLAGS) -c $< -o $@
+
+
+lander: $(LANDER_OBJ)
+	$(CPP) $(CPPFLAGS) $(LANDER_OBJ) $(LDFLAGS) -o lander
+
+coreset: $(CORESET_OBJ)
+	$(CPP) $(CPPFLAGS) $(CORESET_OBJ) $(LDFLAGS) -o coreset
+
+coreconv: $(CORECONV_OBJ)
+	$(CPP) $(CPPFLAGS) $(CORECONV_OBJ) $(LDFLAGS) -o coreconv
+	
+test: $(TEST_OBJ)
+	$(CPP) $(CPPFLAGS) $(TEST_OBJ) $(LDFLAGS) -o test
+
+.PHONY : clean
+clean:
+	rm ./obj/*.o
+	rm lander coreset coreconv
+
